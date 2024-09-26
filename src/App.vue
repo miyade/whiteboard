@@ -1,26 +1,21 @@
+<!-- src/views/HomeView.vue -->
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="home">
+    <h1>AI Whiteboard</h1>
+    <Whiteboard />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Whiteboard from '@/components/WhiteBoard.vue';
 
 export default {
-  name: 'App',
+  name: 'HomeView',
   components: {
-    HelloWorld
-  }
-}
+    Whiteboard,
+  },
+};
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style scoped>
 </style>
